@@ -9,5 +9,11 @@ public class Test {
 
         System.out.println(cestas);
         System.out.println(paris);
+
+        Employee bill = new Employee("Gates", "Bill", 65, "120 wash road", new Capital("Washington", "USA", 700000, "W-M"), "USA", "Microsoft", 100000);
+        Employee elon = new Employee("Musk", "Elon", 49, "210 la road", new City("Palo Alto", "USA", 66000), "South-Africa", "Tesla", 150000);
+
+        System.out.println(bill);
+        System.out.println(elon);
     }
 }
