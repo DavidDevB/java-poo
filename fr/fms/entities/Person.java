@@ -1,6 +1,6 @@
 package java_poo.fr.fms.entities;
 
-public class Person {
+public abstract class Person {
 
     private String lastName;
     private String firstName;
@@ -41,4 +41,6 @@ public class Person {
     public String getBornCountry(){
         return this.bornCountry;
     }
+
+    public abstract int compensation();
 }

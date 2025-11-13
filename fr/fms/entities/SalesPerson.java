@@ -17,4 +17,17 @@ public class SalesPerson extends Person{
     public String toString() {
         return super.getLastName() + ", " +  super.getFirstName() + "' " + super.getAge() + " ans, adresse: " + super.getAdress() + ", habitant à: " + super.getCity() + ", pays de naissance: " + super.getBornCountry() + ", travaillant pour: " + this.company + ", %CA: " + this.salary;
     }
+
+    @Override
+    public int compensation(){
+        return (int)Math.round(this.salary * 50000);
+    }
+
+    public String getFirstName() {
+        return super.getFirstName();
+    }
+
+    public String getLastName() {
+        return super.getLastName();
+    }
 }

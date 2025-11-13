@@ -25,6 +25,6 @@ public class City {
     }
  
     public String toString(){
-        return "[city: " + this.name + "]" + " [country: " + this.country + "]"+ " [population: " + this.population + " habitants]";
+        return "[city: " + this.name + "]" + " [country: " + this.country + "]";
     }
  }

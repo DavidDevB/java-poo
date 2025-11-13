@@ -14,4 +14,17 @@ public class Employee extends Person{
     public String toString() {
         return super.getLastName() + ", " +  super.getFirstName() + "' " + super.getAge() + " ans, adresse: " + super.getAdress() + ", habitant à: " + super.getCity() + ", pays de naissance: " + super.getBornCountry() + ", travaillant pour: " + this.company + ", salaire: " + this.salary;
     }
+
+    @Override
+    public int compensation(){
+        return this.salary - (20 * this.salary / 100);
+    }
+
+    public String getFirstName() {
+        return super.getFirstName();
+    }
+
+    public String getLastName() {
+        return super.getLastName();
+    }
 }
