@@ -22,6 +22,8 @@ public abstract class Product implements Consumable {
 
     public abstract LocalDate calculateExpirationDate();
 
+
+    // Retourne le stock moins la quantité fournie si la quantité est inférieure ou égale au stock.
     public void setStockQuantity(double quantity) {
         if (quantity > this.stockQuantity) {
             System.out.println("Error: Cannot set stock quantity to a value greater than current stock.");
@@ -38,6 +40,8 @@ public abstract class Product implements Consumable {
         return shelfLifeDays;
     }
 
+
+    // Retourne un booléen selon si la date fourni est après la date d'expiration.
     @Override
     public boolean isExpired(LocalDate dateVerification) {
         return dateVerification.isAfter(calculateExpirationDate());
